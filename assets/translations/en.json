@@ -38,6 +38,8 @@
   "enterph": "Please enter phone number to send the verification code",
   "emData": "Enter your email to send your verification code",
   "forgPassw": "Forget password",
+  "dontSent" : "Not sent",
+  "reSend" : "again",
   "changePass": "Change Password",
   "welcomeM": "Welcome to Mawasim of Services !",
   "name": "Manal",

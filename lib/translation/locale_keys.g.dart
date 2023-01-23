@@ -40,6 +40,8 @@ abstract class  LocaleKeys {
   static const emData = 'emData';
   static const regDone = 'regDone';
   static const forgPassw = 'forgPassw';
+  static const dontSent = 'dontSent';
+  static const reSend = 'reSend';
   static const welcomeM = 'welcomeM';
   static const name = 'name';
   static const logout = 'logout';

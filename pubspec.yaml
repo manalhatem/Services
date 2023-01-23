@@ -43,6 +43,8 @@ dependencies:
   fluttertoast: ^8.0.9
   shared_preferences: ^2.0.15
   easy_localization: ^3.0.1
+  dotted_border:
+  pin_code_fields: ^7.4.0
 
 dev_dependencies:
   flutter_test:

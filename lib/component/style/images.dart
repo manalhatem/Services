@@ -11,5 +11,14 @@ class AppImages{
   static const nextt= "assets/images/nextt.png";
   static const chooseAuthBack="assets/images/c1.png";
   static const loginBack="assets/images/login.png";
+  static const registerBack= "assets/images/register.png";
+  static const chooseMethodBackground="assets/images/c2.png";
+  static const phone="assets/images/phone.png";
+  static const email="assets/images/email.png";
+  static const backPhone="assets/images/ph.png";
+  static const backEmail="assets/images/e-mail.png";
+  static const backConfirmCode="assets/images/confirm.png";
+  static const backForgetPass="assets/images/forgetpas.png";
+  static const backChangePass="assets/images/ch1.png";
 
 }
