@@ -20,5 +20,34 @@ class AppImages{
   static const backConfirmCode="assets/images/confirm.png";
   static const backForgetPass="assets/images/forgetpas.png";
   static const backChangePass="assets/images/ch1.png";
+  static const menu="assets/images/iconMenu.png";
+  static const notify="assets/images/notification2.png";
+  static const filter="assets/images/fil.png";
+  static const mainServ1="assets/images/all.png";
+  static const mainServ2="assets/images/build.png";
+  static const mainServ3="assets/images/car.png";
+  static const mainServ4="assets/images/tank.png";
+  static const mainServ5="assets/images/containerServ.png";
+  static const clean="assets/images/ss.png";
+  static const offer1="assets/images/of1.png";
+  static const offer2="assets/images/of2.png";
+  static const homeIcon="assets/images/d1.png";
+  static const galleryIcon="assets/images/gallery.png";
+  static const addIcon="assets/images/order service.png";
+  static const offerIcon="assets/images/offers.png";
+  static const profileIcon="assets/images/user.png";
+  static const homeIconActive="assets/images/a_home.png";
+  static const galleryIconActive="assets/images/a_gallery.png";
+  static const offerIconActive="assets/images/a_offers.png";
+  static const profileIconActive="assets/images/a_user.png";
+  static const ser1="assets/images/g1.png";
+  static const ser2="assets/images/g2.png";
+  static const ser3="assets/images/g3.png";
+  static const ser4="assets/images/g4.png";
+  static const ser5="assets/images/g5.png";
+  static const ser6="assets/images/g6.png";
+  static const addOrder="assets/images/add order.png";
+  static const trueee="assets/images/tr.png";
+
 
 }

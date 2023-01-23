@@ -12,6 +12,15 @@ class AppRoutes{
   static const String forgetPass ="/forgetPass";
   static const String confirmCodePass ="/confirmCodePass";
   static const String chanePass ="/chanePass";
-
+  static const String homeView ="/homeView";
+  static const String galleryView ="/galleryView";
+  static const String serviceView ="/serviceView";
+  static const String subServiceView ="/subServiceView";
+  static const String serviceDetailsView ="/serviceDetailsView";
+  static const String reviewView ="/reviewView";
+  static const String addReviewView ="/addReviewView";
+  static const String orderNow ="/orderNow";
+  static const String offersView ="/offersView";
+  static const String profileView ="/profileView";
 
 }
