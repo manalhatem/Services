@@ -7,6 +7,7 @@ import '../../../component/style/fonts.dart';
 import '../../../component/style/size.dart';
 import '../../../core/local/cach_helper.dart';
 import '../../../translation/locale_keys.g.dart';
+import '../../../utilities/routes.dart';
 
 class LanguageView extends StatelessWidget {
   const LanguageView({Key? key}) : super(key: key);
@@ -39,6 +40,7 @@ class LanguageView extends StatelessWidget {
                           onTap: ()async{
                             await context.setLocale(Locale('en'));
                             CacheHelper.saveData('appLang', 'en');
+                            Navigator.pushNamed(context, AppRoutes.intro);
                           },
                           child: CustomText(text: 'English', color: Colors.white,size: AppFonts.t5,))),
                   Positioned(
@@ -48,6 +50,7 @@ class LanguageView extends StatelessWidget {
                           onTap: ()async{
                             await context.setLocale(Locale('ar'));
                             CacheHelper.saveData('appLang', 'ar');
+                            Navigator.pushNamed(context, AppRoutes.intro);
 
                           },
                           child: CustomText(text: 'اللغه العربيه', color: Colors.white,size: AppFonts.t5,))),

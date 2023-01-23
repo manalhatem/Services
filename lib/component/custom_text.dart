@@ -20,7 +20,6 @@ class CustomText extends StatelessWidget {
       color: color, fontSize: size,fontWeight: fontWeight,
         decoration: deco,
     ),textAlign:align ,
-      overflow: TextOverflow.ellipsis,
     maxLines: max,);
   }
 }
