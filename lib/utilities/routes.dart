@@ -22,5 +22,6 @@ class AppRoutes{
   static const String orderNow ="/orderNow";
   static const String offersView ="/offersView";
   static const String profileView ="/profileView";
+  static const String btnNav ="/btnNav";
 
 }

@@ -35,7 +35,9 @@ class ChooseAuth extends StatelessWidget {
             },),
             SizedBox(height: height(context)*0.05,),
             GestureDetector(
-              onTap: (){},
+              onTap: (){
+                Navigator.pushReplacementNamed(context, AppRoutes.btnNav);
+              },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

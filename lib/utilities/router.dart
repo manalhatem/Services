@@ -11,6 +11,7 @@ import '../screens/auth/forget_pass/view/confirm_code_pass.dart';
 import '../screens/auth/forget_pass/view/forget_pass.dart';
 import '../screens/auth/login/view/login_view.dart';
 import '../screens/auth/register/view/register_view.dart';
+import '../screens/btn_nav.dart';
 import '../screens/gallery/views/gallery_view.dart';
 import '../screens/home/view/home_view.dart';
 import '../screens/intro_screen/views/intro_screen.dart';
@@ -62,7 +63,7 @@ Route<dynamic> onGenerate(RouteSettings settings) {
     case AppRoutes.serviceView:
       return MaterialPageRoute(builder: ((context) => const ServiceView()));
     case AppRoutes.subServiceView:
-      return MaterialPageRoute(builder: ((context) => const SubServiceView()));
+      return MaterialPageRoute(builder: ((context) =>  SubServiceView()));
     case AppRoutes.serviceDetailsView:
       return MaterialPageRoute(builder: ((context) => const ServiceDetailsView()));
     case AppRoutes.reviewView:
@@ -75,6 +76,8 @@ Route<dynamic> onGenerate(RouteSettings settings) {
       return MaterialPageRoute(builder: ((context) => const OffersView()));
     case AppRoutes.profileView:
       return MaterialPageRoute(builder: ((context) => const ProfileView()));
+    case AppRoutes.btnNav:
+      return MaterialPageRoute(builder: ((context) => const ButNavBar()));
     default:
       return MaterialPageRoute(builder: ((context) => const SplashScreen()));
   }

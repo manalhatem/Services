@@ -21,15 +21,15 @@ class CustomFormField extends StatelessWidget {
         fillColor: Colors.grey.withOpacity(.05),
         filled: true,
         border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(10),
             borderSide: BorderSide(color:Colors.grey.withOpacity(.05))
         ),
         focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(10),
             borderSide: BorderSide(color:Colors.grey)
         ),
         enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(10),
             borderSide: BorderSide(color: Colors.grey.withOpacity(.05))
         ),
         prefixIcon: Icon(pre, color: Colors.grey.withOpacity(0.7),size: 22,),
