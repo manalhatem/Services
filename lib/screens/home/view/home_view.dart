@@ -7,17 +7,21 @@ import '../../../component/style/size.dart';
 import '../../../translation/locale_keys.g.dart';
 import '../../../utilities/routes.dart';
 import '../../auth/widgets/text_field.dart';
+import '../widgets/drawer.dart';
 import '../widgets/main_ser_ele.dart';
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
     List offerImage=[
       AppImages.offer1,
       AppImages.offer2
     ];
     return Scaffold(
+      key: _scaffoldKey,
+      drawer: CustomDrawer(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,7 +33,11 @@ class HomeView extends StatelessWidget {
                 Positioned(
                     top: height(context)*0.14,
                     right: height(context)*0.03,
-                    child: Image.asset(AppImages.menu,width: width(context)*0.095,)),
+                    child: GestureDetector(
+                        onTap: (){
+                          _scaffoldKey.currentState!.openDrawer();
+                        },
+                        child: Image.asset(AppImages.menu,width: width(context)*0.095,))),
                 Positioned(
                     top: height(context)*0.12,
                     left: height(context)*0.03,

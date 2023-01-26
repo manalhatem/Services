@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../screens/Partners/views/partners_view.dart';
+import '../screens/about_app/view/about_app_view.dart';
 import '../screens/add_reviews/views/add_review_view.dart';
 import '../screens/auth/choose_auth/view/choose_auth.dart';
 import '../screens/auth/choose_method/view/choose_method.dart';
@@ -12,6 +14,9 @@ import '../screens/auth/forget_pass/view/forget_pass.dart';
 import '../screens/auth/login/view/login_view.dart';
 import '../screens/auth/register/view/register_view.dart';
 import '../screens/btn_nav.dart';
+import '../screens/contact_us/views/contact_us_view.dart';
+import '../screens/customer/view/customer_view.dart';
+import '../screens/faq/view/faq_view.dart';
 import '../screens/gallery/views/gallery_view.dart';
 import '../screens/home/view/home_view.dart';
 import '../screens/intro_screen/views/intro_screen.dart';
@@ -24,6 +29,9 @@ import '../screens/service_details/views/service_details_view.dart';
 import '../screens/services/views/service_view.dart';
 import '../screens/splash.dart';
 import '../screens/sub_service/views/sub_service_view.dart';
+import '../screens/technical_support/view/problem_details.dart';
+import '../screens/technical_support/view/problem_history.dart';
+import '../screens/technical_support/view/tecnical_support_view.dart';
 import 'routes.dart';
 
 
@@ -78,6 +86,22 @@ Route<dynamic> onGenerate(RouteSettings settings) {
       return MaterialPageRoute(builder: ((context) => const ProfileView()));
     case AppRoutes.btnNav:
       return MaterialPageRoute(builder: ((context) => const ButNavBar()));
+    case AppRoutes.partnersView:
+      return MaterialPageRoute(builder: ((context) => const PartnersScreen()));
+    case AppRoutes.customerScreen:
+      return MaterialPageRoute(builder: ((context) => const CustomerView()));
+    case AppRoutes.technicalScreen:
+      return MaterialPageRoute(builder: ((context) => const TechnicalView()));
+    case AppRoutes.faqScreen:
+      return MaterialPageRoute(builder: ((context) => const FaqView()));
+    case AppRoutes.aboutappScreen:
+      return MaterialPageRoute(builder: ((context) => const AboutAppView()));
+    case AppRoutes.contactusScreen:
+      return MaterialPageRoute(builder: ((context) => const ContactUsView()));
+    case AppRoutes.problemHistoryScreen:
+      return MaterialPageRoute(builder: ((context) => const ProblemHistoryView()));
+    case AppRoutes.problemDetailsScreen:
+      return MaterialPageRoute(builder: ((context) => const ProblemDetails()));
     default:
       return MaterialPageRoute(builder: ((context) => const SplashScreen()));
   }

@@ -23,5 +23,17 @@ class AppRoutes{
   static const String offersView ="/offersView";
   static const String profileView ="/profileView";
   static const String btnNav ="/btnNav";
+  static const String partnersView ="/partnersView";
+  static const String customerScreen ="/customerScreen";
+  static const String technicalScreen ="/technicalScreen";
+  static const String faqScreen ="/faqScreen";
+  static const String aboutappScreen ="/aboutappScreen";
+  static const String contactusScreen ="/contactusScreen";
+  static const String problemHistoryScreen ="/problemHistoryScreen";
+  static const String problemDetailsScreen ="/problemDetailsScreen";
+
+
+
+
 
 }

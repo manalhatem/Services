@@ -53,6 +53,27 @@ class AppImages{
   static const ser6="assets/images/g6.png";
   static const addOrder="assets/images/add order.png";
   static const trueee="assets/images/tr.png";
+  //drawer
+  static const drawerBg="assets/images/mbg.png";
+  static const homeDIcon = 'assets/images/d1.png';
+  static const closeIcon = 'assets/images/dd1.png';
+  static const servicesIcon = 'assets/images/d2.png';
+  static const offersIcon = 'assets/images/d3.png';
+  static const allServicesIcon = 'assets/images/d3.png';
+  static const paretrDrIcon = 'assets/images/d4.png';
+  static const customerDrIcon = 'assets/images/d5.png';
+  static const tecnSuppIcon = 'assets/images/d6.png';
+  static const aboutAppIcon = 'assets/images/d7.png';
+  static const contactUsIcon = 'assets/images/d8.png';
+  static const logOutDrIcon = 'assets/images/d9.png';
+  static const heartIcon = 'assets/images/heart.png';
+  static const MawasimDrLogo = "assets/images/d11.png";
+  static const notLogedUser = "assets/images/not loged.png";
+  static const faqIcon = "assets/images/faq.png";
+  static const tech1 = "assets/images/pr0.png";
+  static const tech2 = "assets/images/pr1.png";
+  static const tech3 = "assets/images/pr2.png";
+
 
 
 
