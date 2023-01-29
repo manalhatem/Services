@@ -20,7 +20,7 @@ class _ButNavBarState extends State<ButNavBar> {
     const HomeView(),
     const GalleryView(),
     const OrderNowView(),
-    const OffersView(),
+     OffersView(withBack: false,),
     const ProfileView()
   ];
   @override

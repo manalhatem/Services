@@ -73,6 +73,10 @@ class AppImages{
   static const tech1 = "assets/images/pr0.png";
   static const tech2 = "assets/images/pr1.png";
   static const tech3 = "assets/images/pr2.png";
+  static const addExpand = "assets/images/expandAdd.png";
+  static const minExpand = "assets/images/expandMins.png";
+  static const nexxt = "assets/images/nex.png";
+  static const offerBg = "assets/images/offBg.png";
 
 
 

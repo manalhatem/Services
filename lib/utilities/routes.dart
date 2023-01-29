@@ -21,6 +21,7 @@ class AppRoutes{
   static const String addReviewView ="/addReviewView";
   static const String orderNow ="/orderNow";
   static const String offersView ="/offersView";
+  static const String offersDetailsView ="/offersDetailsView";
   static const String profileView ="/profileView";
   static const String btnNav ="/btnNav";
   static const String partnersView ="/partnersView";

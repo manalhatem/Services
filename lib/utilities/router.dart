@@ -21,6 +21,7 @@ import '../screens/gallery/views/gallery_view.dart';
 import '../screens/home/view/home_view.dart';
 import '../screens/intro_screen/views/intro_screen.dart';
 import '../screens/langague/view/lang_view.dart';
+import '../screens/offers/views/offer_details_view.dart';
 import '../screens/offers/views/offers_view.dart';
 import '../screens/order_now/view/order_now_view.dart';
 import '../screens/profile/views/profile_view.dart';
@@ -81,7 +82,9 @@ Route<dynamic> onGenerate(RouteSettings settings) {
     case AppRoutes.orderNow:
       return MaterialPageRoute(builder: ((context) => const OrderNowView()));
     case AppRoutes.offersView:
-      return MaterialPageRoute(builder: ((context) => const OffersView()));
+      return MaterialPageRoute(builder: ((context) =>  OffersView(withBack: true,)));
+    case AppRoutes.offersDetailsView:
+      return MaterialPageRoute(builder: ((context) => const OfferDetailsView()));
     case AppRoutes.profileView:
       return MaterialPageRoute(builder: ((context) => const ProfileView()));
     case AppRoutes.btnNav:
