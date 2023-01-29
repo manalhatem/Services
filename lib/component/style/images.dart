@@ -85,6 +85,17 @@ class AppImages{
   static const morePart = "assets/images/mo.png";
   static const moreCustom = "assets/images/custom.png";
   static const customerName = "assets/images/nameComp.png";
+  static const profileBack = "assets/images/profileBack.png";
+  static const user = "assets/images/uu.png";
+  static const data = "assets/images/pr.png";
+  static const orders = "assets/images/his.png";
+  static const history = "assets/images/history.png";
+  static const settings = "assets/images/sett.png";
+  static const question = "assets/images/questio.png";
+  static const help = "assets/images/ser.png";
+  static const logout = "assets/images/logout.png";
+  static const backData = "assets/images/backData.png";
+
 
 
 

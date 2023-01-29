@@ -24,6 +24,8 @@ import '../screens/langague/view/lang_view.dart';
 import '../screens/offers/views/offer_details_view.dart';
 import '../screens/offers/views/offers_view.dart';
 import '../screens/order_now/view/order_now_view.dart';
+import '../screens/profile/views/edit_info.dart';
+import '../screens/profile/views/personal_info.dart';
 import '../screens/profile/views/profile_view.dart';
 import '../screens/reviews/views/review_view.dart';
 import '../screens/service_details/views/service_details_view.dart';
@@ -87,6 +89,10 @@ Route<dynamic> onGenerate(RouteSettings settings) {
       return MaterialPageRoute(builder: ((context) => const OfferDetailsView()));
     case AppRoutes.profileView:
       return MaterialPageRoute(builder: ((context) => const ProfileView()));
+    case AppRoutes.personalInfo:
+      return MaterialPageRoute(builder: ((context) => const PersonalInfo()));
+    case AppRoutes.editInfo:
+      return MaterialPageRoute(builder: ((context) => const EditInfo()));
     case AppRoutes.btnNav:
       return MaterialPageRoute(builder: ((context) => const ButNavBar()));
     case AppRoutes.partnersView:
