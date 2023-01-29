@@ -77,6 +77,14 @@ class AppImages{
   static const minExpand = "assets/images/expandMins.png";
   static const nexxt = "assets/images/nex.png";
   static const offerBg = "assets/images/offBg.png";
+  static const companyName = "assets/images/l2.png";
+  static const face = "assets/images/t1.png";
+  static const twitter = "assets/images/t2.png";
+  static const insta = "assets/images/t3.png";
+  static const partBg = "assets/images/Rectangle 1211.png";
+  static const morePart = "assets/images/mo.png";
+  static const moreCustom = "assets/images/custom.png";
+  static const customerName = "assets/images/nameComp.png";
 
 
 
