@@ -3,17 +3,19 @@ import '../../../component/style/colors.dart';
 import '../../../component/style/fonts.dart';
 import '../../../component/style/size.dart';
 class CustomFormField extends StatelessWidget {
-  CustomFormField({Key? key, this.save, this.hint, this.pre, this.vali, this.col,this.textcol}) : super(key: key);
+  CustomFormField({Key? key, this.max,this.save, this.hint, this.pre, this.vali, this.col,this.textcol}) : super(key: key);
   void Function(String?)? save;
   String? Function(String?)? vali;
   IconData? pre;
   String? hint;
   Color? col;
   Color? textcol;
+  int? max;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      maxLines: max,
       onSaved: save,
       validator:vali,
       cursorColor: AppColor.primaryColor,
@@ -23,15 +25,15 @@ class CustomFormField extends StatelessWidget {
         fillColor: Colors.grey.withOpacity(.05) ,
         filled: true,
         border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(15),
             borderSide: BorderSide(color:col ?? Colors.grey.withOpacity(.05))
         ),
         focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(15),
             borderSide: BorderSide(color:col ?? Colors.grey)
         ),
         enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(15),
             borderSide: BorderSide(color:col ?? Colors.grey.withOpacity(.05))
         ),
         prefixIcon: Icon(pre, color: Colors.grey.withOpacity(0.7),size: 22,),

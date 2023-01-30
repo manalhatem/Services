@@ -38,6 +38,8 @@ class AppRoutes{
   static const String langView ="/langView";
   static const String changePassView ="/changePassView";
   static const String managerWord ="/managerWord";
+  static const String helpCen ="/helpCen";
+
 
 
 

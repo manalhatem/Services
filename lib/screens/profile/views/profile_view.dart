@@ -27,22 +27,23 @@ class ProfileView extends StatelessWidget {
           children: [
             Padding(
               padding:  EdgeInsets.only(top:height(context)*0.07,right: width(context)*0.07 ),
-              child: Align(
-                alignment: Alignment.topRight,
-                child: GestureDetector(
-                  onTap: ()=>Navigator.pop(context),
-                  child: Container(
-                    padding: const EdgeInsets.all(7),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(5),
-                        color: AppColor.whiteColor.withOpacity(.6)
-                    ),
-                    child: Transform.rotate(
-                        angle: pi,
-                        child:  Icon(Icons.arrow_forward_ios, color: AppColor.primaryColor,size: 22,)),
-                  ),
-                ),
-              ),
+              child: SizedBox(height: height(context)*.05,)
+              // Align(
+              //   alignment: Alignment.topRight,
+              //   child: GestureDetector(
+              //     onTap: ()=>Navigator.pop(context),
+              //     child: Container(
+              //       padding: const EdgeInsets.all(7),
+              //       decoration: BoxDecoration(
+              //           borderRadius: BorderRadius.circular(5),
+              //           color: AppColor.whiteColor.withOpacity(.6)
+              //       ),
+              //       child: Transform.rotate(
+              //           angle: pi,
+              //           child:  Icon(Icons.arrow_forward_ios, color: AppColor.primaryColor,size: 22,)),
+              //     ),
+              //   ),
+              // ),
             ),
             Image.asset(AppImages.user,width: width(context)*0.37,),
             SizedBox(height: height(context)*0.02,),
@@ -72,8 +73,12 @@ class ProfileView extends StatelessWidget {
                   CustomProfileRow(text: LocaleKeys.settings.tr(), img: AppImages.settings,ontap: (){
                     Navigator.pushNamed(context, AppRoutes.settingsView);
                   },),
-                  CustomProfileRow(text: LocaleKeys.FAQ.tr(), img: AppImages.question,ontap: (){},),
-                  CustomProfileRow(text: LocaleKeys.helpCen.tr(), img: AppImages.help,ontap: (){},),
+                  CustomProfileRow(text: LocaleKeys.FAQ.tr(), img: AppImages.question,ontap: (){
+                    Navigator.pushNamed(context, AppRoutes.faqScreen);
+                  },),
+                  CustomProfileRow(text: LocaleKeys.helpCen.tr(), img: AppImages.help,ontap: (){
+                    Navigator.pushNamed(context, AppRoutes.helpCen);
+                  },),
                   CustomProfileRow(text: LocaleKeys.logout.tr(), img: AppImages.logout,ontap: (){},),
 
 

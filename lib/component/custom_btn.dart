@@ -14,7 +14,7 @@ class CustomBtn extends StatelessWidget {
     return GestureDetector(
       onTap: ontap,
       child: Container(
-        width: width(context)*.85,
+        width: width(context)*.88,
         height: height(context)*0.064,
         alignment: Alignment.center,
         decoration: BoxDecoration(

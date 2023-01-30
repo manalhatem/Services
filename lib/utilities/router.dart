@@ -19,6 +19,7 @@ import '../screens/contact_us/views/contact_us_view.dart';
 import '../screens/customer/view/customer_view.dart';
 import '../screens/faq/view/faq_view.dart';
 import '../screens/gallery/views/gallery_view.dart';
+import '../screens/help_center/views/help_center_view.dart';
 import '../screens/home/view/home_view.dart';
 import '../screens/intro_screen/views/intro_screen.dart';
 import '../screens/lang/views/lang_view.dart';
@@ -123,6 +124,8 @@ Route<dynamic> onGenerate(RouteSettings settings) {
       return MaterialPageRoute(builder: ((context) => const ChangePassword()));
     case AppRoutes.managerWord:
       return MaterialPageRoute(builder: ((context) => const ManagerWord()));
+    case AppRoutes.helpCen:
+      return MaterialPageRoute(builder: ((context) => const HelpCenterView()));
     default:
       return MaterialPageRoute(builder: ((context) => const SplashScreen()));
   }

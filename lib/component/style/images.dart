@@ -101,6 +101,11 @@ class AppImages{
   static const verify = "assets/images/vr.png";
   static const greenLogo = "assets/images/MMM1.png";
   static const manager = "assets/images/mang.png";
+  static const i = "assets/images/Group 3011.png";
+  static const loc = "assets/images/loca.png";
+  static const mail = "assets/images/em.png";
+  static const mob = "assets/images/ip.png";
+
 
 
 
