@@ -105,6 +105,7 @@ class AppImages{
   static const loc = "assets/images/loca.png";
   static const mail = "assets/images/em.png";
   static const mob = "assets/images/ip.png";
+  static const allIcon2 = 'assets/images/allIcon.png';
 
 
 
