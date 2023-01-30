@@ -20,7 +20,7 @@ class CustomFormField extends StatelessWidget {
       style: TextStyle(color:textcol??  AppColor.secondryColor),
       decoration: InputDecoration(
         contentPadding: EdgeInsets.symmetric(vertical: height(context)*0.015,horizontal:height(context)*0.01 ),
-        fillColor: col ?? Colors.grey.withOpacity(.05) ,
+        fillColor: Colors.grey.withOpacity(.05) ,
         filled: true,
         border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),

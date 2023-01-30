@@ -95,6 +95,14 @@ class AppImages{
   static const help = "assets/images/ser.png";
   static const logout = "assets/images/logout.png";
   static const backData = "assets/images/backData.png";
+  static const bill = "assets/images/nn.png";
+  static const lang = "assets/images/nnn.png";
+  static const changePass = "assets/images/nnnn.png";
+  static const verify = "assets/images/vr.png";
+  static const greenLogo = "assets/images/MMM1.png";
+  static const manager = "assets/images/mang.png";
+
+
 
 
 

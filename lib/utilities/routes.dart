@@ -34,6 +34,13 @@ class AppRoutes{
   static const String contactusScreen ="/contactusScreen";
   static const String problemHistoryScreen ="/problemHistoryScreen";
   static const String problemDetailsScreen ="/problemDetailsScreen";
+  static const String settingsView ="/settingsView";
+  static const String langView ="/langView";
+  static const String changePassView ="/changePassView";
+  static const String managerWord ="/managerWord";
+
+
+
 
 
 

@@ -40,7 +40,7 @@ class LanguageView extends StatelessWidget {
                           onTap: ()async{
                             await context.setLocale(Locale('en'));
                             CacheHelper.saveData('appLang', 'en');
-                            Navigator.pushNamed(context, AppRoutes.intro);
+                            Navigator.pushReplacementNamed(context, AppRoutes.intro);
                           },
                           child: CustomText(text: 'English', color: Colors.white,size: AppFonts.t5,))),
                   Positioned(
@@ -50,7 +50,7 @@ class LanguageView extends StatelessWidget {
                           onTap: ()async{
                             await context.setLocale(Locale('ar'));
                             CacheHelper.saveData('appLang', 'ar');
-                            Navigator.pushNamed(context, AppRoutes.intro);
+                            Navigator.pushReplacementNamed(context, AppRoutes.intro);
 
                           },
                           child: CustomText(text: 'اللغه العربيه', color: Colors.white,size: AppFonts.t5,))),

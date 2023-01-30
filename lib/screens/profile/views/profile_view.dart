@@ -69,7 +69,9 @@ class ProfileView extends StatelessWidget {
                   },),
                   CustomProfileRow(text: LocaleKeys.myOrders.tr(), img: AppImages.orders,ontap: (){},),
                   CustomProfileRow(text: LocaleKeys.history.tr(), img: AppImages.history,ontap: (){},),
-                  CustomProfileRow(text: LocaleKeys.settings.tr(), img: AppImages.settings,ontap: (){},),
+                  CustomProfileRow(text: LocaleKeys.settings.tr(), img: AppImages.settings,ontap: (){
+                    Navigator.pushNamed(context, AppRoutes.settingsView);
+                  },),
                   CustomProfileRow(text: LocaleKeys.FAQ.tr(), img: AppImages.question,ontap: (){},),
                   CustomProfileRow(text: LocaleKeys.helpCen.tr(), img: AppImages.help,ontap: (){},),
                   CustomProfileRow(text: LocaleKeys.logout.tr(), img: AppImages.logout,ontap: (){},),

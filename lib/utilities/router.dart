@@ -14,13 +14,16 @@ import '../screens/auth/forget_pass/view/forget_pass.dart';
 import '../screens/auth/login/view/login_view.dart';
 import '../screens/auth/register/view/register_view.dart';
 import '../screens/btn_nav.dart';
+import '../screens/change_pass/views/change_pass.dart';
 import '../screens/contact_us/views/contact_us_view.dart';
 import '../screens/customer/view/customer_view.dart';
 import '../screens/faq/view/faq_view.dart';
 import '../screens/gallery/views/gallery_view.dart';
 import '../screens/home/view/home_view.dart';
 import '../screens/intro_screen/views/intro_screen.dart';
+import '../screens/lang/views/lang_view.dart';
 import '../screens/langague/view/lang_view.dart';
+import '../screens/managerWord/view/manager_word.dart';
 import '../screens/offers/views/offer_details_view.dart';
 import '../screens/offers/views/offers_view.dart';
 import '../screens/order_now/view/order_now_view.dart';
@@ -30,6 +33,7 @@ import '../screens/profile/views/profile_view.dart';
 import '../screens/reviews/views/review_view.dart';
 import '../screens/service_details/views/service_details_view.dart';
 import '../screens/services/views/service_view.dart';
+import '../screens/settings/views/settings_view.dart';
 import '../screens/splash.dart';
 import '../screens/sub_service/views/sub_service_view.dart';
 import '../screens/technical_support/view/problem_details.dart';
@@ -111,6 +115,14 @@ Route<dynamic> onGenerate(RouteSettings settings) {
       return MaterialPageRoute(builder: ((context) => const ProblemHistoryView()));
     case AppRoutes.problemDetailsScreen:
       return MaterialPageRoute(builder: ((context) => const ProblemDetails()));
+    case AppRoutes.settingsView:
+      return MaterialPageRoute(builder: ((context) => const SettingsView()));
+    case AppRoutes.langView:
+      return MaterialPageRoute(builder: ((context) => const LangView()));
+    case AppRoutes.changePassView:
+      return MaterialPageRoute(builder: ((context) => const ChangePassword()));
+    case AppRoutes.managerWord:
+      return MaterialPageRoute(builder: ((context) => const ManagerWord()));
     default:
       return MaterialPageRoute(builder: ((context) => const SplashScreen()));
   }
