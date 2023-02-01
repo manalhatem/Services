@@ -120,6 +120,11 @@ class AppImages{
   static const lineBoredrColor = 'assets/images/v0.png';
   static const lineBoredrgray = 'assets/images/v1.png';
   static const deliver = 'assets/images/delivery-box.png';
+  static const pay1 = 'assets/images/p1.png';
+  static const pay2 = 'assets/images/p2.png';
+  static const pay3 = 'assets/images/p3.png';
+  static const pay4 = 'assets/images/p5.png';
+
 
 
 

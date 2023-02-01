@@ -12,6 +12,7 @@ import 'gallery/views/gallery_view.dart';
 import 'home/view/home_view.dart';
 import 'offers/views/offers_view.dart';
 import 'order_now/view/order_now_view.dart';
+import 'payment_method/views/payment_method.dart';
 import 'profile/views/profile_view.dart';
 class ButNavBar extends StatefulWidget {
   const ButNavBar({Key? key}) : super(key: key);
@@ -148,7 +149,11 @@ class _ButNavBarState extends State<ButNavBar> {
                 SizedBox(height: height(context)*0.015,),
                 CustomFormField(max: 4,hint: LocaleKeys.notes.tr(),save: (value){},vali: (val){},textcol: AppColor.primaryColor,),
                 SizedBox(height: height(context)*0.015,),
-                CustomBtn(text: LocaleKeys.orderNow.tr(),)
+                CustomBtn(text: LocaleKeys.orderNow.tr(), ontap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return PaymentMethodView();
+                  }));
+                },)
               ],
             ),
           ),
