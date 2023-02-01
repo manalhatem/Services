@@ -34,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
             child:FadeAnimation(
               1,
               2, Center(
-              child: Image.asset(AppImages.MawasimLogo,width: width(context) *0.5,),
+              child: Image.asset(AppImages.MawasimLogo,width: width(context) *0.4,),
             ),
           ),
 

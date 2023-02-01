@@ -56,14 +56,15 @@ class _IntroViewState extends State<IntroView> {
                       padding:  EdgeInsets.only(top:height(context)*0.03,right: height(context)*0.04,left: height(context)*0.04 ),
                       child: Column(
                         children: [
-                          index==2? SizedBox(height:height(context)*0.035 ,):Align(
-                              alignment:Alignment.topRight,
-                              child: Transform.rotate(
-                                  angle: pi,
-                                  child: IconButton(onPressed: (){
-                                    _controller!.nextPage(duration:const Duration(milliseconds: 100) ,
-                                    curve: Curves.bounceInOut);
-                                  }, icon: Icon(Icons.arrow_forward_ios,color: AppColor.secondryColor,)))),
+                           SizedBox(height:height(context)*0.035 ,),
+                          // Align(
+                          //     alignment:Alignment.topRight,
+                          //     child: Transform.rotate(
+                          //         angle: pi,
+                          //         child: IconButton(onPressed: (){
+                          //           _controller!.nextPage(duration:const Duration(milliseconds: 100) ,
+                          //           curve: Curves.bounceInOut);
+                          //         }, icon: Icon(Icons.arrow_forward_ios,color: AppColor.secondryColor,)))),
                           SizedBox(height: height(context)*0.03,),
                           CustomText(text:introList[index].title , color:AppColor.secondryColor, size:AppFonts.t5),
                           SizedBox(height: height(context)*0.02,),

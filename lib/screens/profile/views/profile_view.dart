@@ -9,6 +9,8 @@ import 'package:mwassim/component/style/size.dart';
 import '../../../component/style/colors.dart';
 import '../../../translation/locale_keys.g.dart';
 import '../../../utilities/routes.dart';
+import '../../my_Order/views/my_order.dart';
+import '../../order_history/views/OrderHistoryScreen.dart';
 import '../widgets/custom_profile_row.dart';
 class ProfileView extends StatelessWidget {
   const ProfileView({Key? key}) : super(key: key);
@@ -68,8 +70,16 @@ class ProfileView extends StatelessWidget {
                   CustomProfileRow(text: LocaleKeys.presonalInfo.tr(), img: AppImages.data,ontap: (){
                     Navigator.pushNamed(context, AppRoutes.personalInfo);
                   },),
-                  CustomProfileRow(text: LocaleKeys.myOrders.tr(), img: AppImages.orders,ontap: (){},),
-                  CustomProfileRow(text: LocaleKeys.history.tr(), img: AppImages.history,ontap: (){},),
+                  CustomProfileRow(text: LocaleKeys.myOrders.tr(), img: AppImages.orders,ontap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context){
+                      return const MYOrderScreen();
+                    }));
+                  },),
+                  CustomProfileRow(text: LocaleKeys.history.tr(), img: AppImages.history,ontap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context){
+                      return const OrderHistoryScreen();
+                    }));
+                  },),
                   CustomProfileRow(text: LocaleKeys.settings.tr(), img: AppImages.settings,ontap: (){
                     Navigator.pushNamed(context, AppRoutes.settingsView);
                   },),

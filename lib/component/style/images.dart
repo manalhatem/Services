@@ -106,6 +106,20 @@ class AppImages{
   static const mail = "assets/images/em.png";
   static const mob = "assets/images/ip.png";
   static const allIcon2 = 'assets/images/allIcon.png';
+  static const ycal = "assets/images/ca.png";
+  static const yloc = 'assets/images/ca2.png';
+  static const sAcceptedIcon = "assets/images/s1.png";
+  static const sUnAcceptedIcon = "assets/images/s2.png";
+  static const sConfirmIcon = "assets/images/a1.png";
+  static const sUnConfirmIcon = "assets/images/a2.png";
+  static const sDeliverIcon = "assets/images/de1.png";
+  static const SunDeliverdIcon = "assets/images/de2.png";
+  static const sDoneOrderIcon = "assets/images/d1.png";
+  static const sUnDoneOrderIcon = "assets/images/d2.png";
+  static const selectedLanIcon = "assets/images/vr.png";
+  static const lineBoredrColor = 'assets/images/v0.png';
+  static const lineBoredrgray = 'assets/images/v1.png';
+  static const deliver = 'assets/images/delivery-box.png';
 
 
 
