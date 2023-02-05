@@ -7,6 +7,7 @@ import '../../../component/style/size.dart';
 import '../../../translation/locale_keys.g.dart';
 import '../../../utilities/routes.dart';
 import '../../auth/widgets/text_field.dart';
+import '../../notification/views/notification_view.dart';
 import '../widgets/drawer.dart';
 import '../widgets/main_ser_ele.dart';
 class HomeView extends StatelessWidget {
@@ -41,7 +42,13 @@ class HomeView extends StatelessWidget {
                 Positioned(
                     top: height(context)*0.12,
                     left: height(context)*0.03,
-                    child: Image.asset(AppImages.notify,width: width(context)*0.14,)),
+                    child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return NotificationView();
+                          }));
+                        },
+                        child: Image.asset(AppImages.notify,width: width(context)*0.14,))),
               ],
             ),
             Padding(
